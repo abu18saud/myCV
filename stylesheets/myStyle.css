@@ -1,4 +1,28 @@
+@font-face {
+    font-family: 'Al-Aramco_';
+    src: url('../fonts/Al-Aramco_.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DroidKufi-Regular';
+    src: url('../fonts/DroidKufi-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GE_SS_Two_Bold';
+    src: url('../fonts/GE_SS_Two_Bold.eot') format('embedded-opentype');
+}
+
 .rtl_dir{
     direction: rtl !important;
     text-align: right !important;
+}
+
+.rtl_dir_center{
+    direction: rtl !important;
+    text-align: center !important;
+}
+
+.background{
+    background-image: url(../images/forMe/programmingKnights.png);
+    background-size: 40px;
+
 }
