@@ -24,7 +24,7 @@
     <!-- Google Material Icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome Icon -->
-    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">    
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
     <!-- IonIcons Icon -->
     <link href="stylesheets/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
@@ -128,7 +128,7 @@
                             <h6 class="text-center text-capitalize">عبدالله علي علي السالم</h6>
                         </div>
 
-                        <div id="nav-link-wrapper">
+                        <div id="nav-link-wrapper" class="pull-right">
 
                             <!-- Side Menu Option -->
                             <ul>
@@ -213,9 +213,17 @@
                                 <!-- Your CV File -->
                                 <a href="https://drive.google.com/uc?export=download&id=1xbgRmwIAQpmR2iDXQJehu87IAMu7YS_A"
                                     download="cv-file.docx"
-                                    class="btn waves-effect waves-light btn-primary custom-btn">تنزيل السيرة الذاتية</a>
-                                <a href="#contact" class="btn waves-effect waves-light btn-primary custom-btn">تواصل
+                                    class="btn waves-effect waves-light btn-primary custom-btn rtl_dir_center"><i
+                                        class="mdi mdi-download"></i> تنزيل السيرة الذاتية</a>
+                                <a href="#contact"
+                                    class="btn waves-effect waves-light btn-primary custom-btn rtl_dir_center"><i
+                                        class="mdi mdi-download"></i>تواصل
                                     معي</a>
+                                <button type="submit" id="submit" name="submit-data" value="Submit"
+                                    class="btn waves-effect waves-light btn-primary custom-btn">
+                                    <!-- Button value here -->
+                                    <i class="ion-ios-paperplane"></i>Send
+                                </button>
                             </div>
                         </div>
 
@@ -539,13 +547,15 @@
                                     </div>
 
                                     <!-- Institution, Period & result -->
-                                    <p class="sub-heading rtl_dir">الكلية التقنية بالأحساء - المملكة العربية السعودية</p>
+                                    <p class="sub-heading rtl_dir">الكلية التقنية بالأحساء - المملكة العربية السعودية
+                                    </p>
                                     <p class="sub-heading rtl_dir">يناير ٢٠١٢ - مارس ٢٠١٤</p>
                                     <p class="sub-heading rtl_dir">المعدل التراكمي: ٤.٨٨ من ٥</p>
 
                                     <!-- Education Summary -->
                                     <p class="content-p rtl_dir">
-                                        يمكنكم الاطلاع وثيقة التخرج من <a href="https://drive.google.com/file/d/0B9e373t_B65XSEo3YVhibVFYakE/view?usp=sharing">هنا</a>
+                                        يمكنكم الاطلاع وثيقة التخرج من <a
+                                            href="https://drive.google.com/file/d/0B9e373t_B65XSEo3YVhibVFYakE/view?usp=sharing">هنا</a>
                                     </p>
                                 </div>
                             </li>
@@ -561,13 +571,15 @@
 
                                     <!-- Institution, Period & result -->
                                     <!-- 1-2-2021 -->
-                                    <p class="sub-heading rtl_dir">الكلية التقنية بالأحساء - المملكة العربية السعودية</p>
+                                    <p class="sub-heading rtl_dir">الكلية التقنية بالأحساء - المملكة العربية السعودية
+                                    </p>
                                     <p class="sub-heading rtl_dir">يناير ٢٠٢١ - إلى الآن</p>
                                     <p class="sub-heading rtl_dir">المعدل التراكمي: ٤.٧٧ من ٥.٠٠</p>
 
                                     <!-- Education Summary -->
                                     <p class="content-p rtl_dir">
-                                        يمكنكم الاطلاع على آخر تراكمي حصلتُ عليه إلى الآن من <a href="https://drive.google.com/file/d/1V06oKYLjh96lLyFEmKs7x6HexObQljC7/view?usp=sharing">هنا</a>
+                                        يمكنكم الاطلاع على آخر تراكمي حصلتُ عليه إلى الآن من <a
+                                            href="https://drive.google.com/file/d/1V06oKYLjh96lLyFEmKs7x6HexObQljC7/view?usp=sharing">هنا</a>
                                     </p>
                                 </div>
                             </li>
@@ -581,12 +593,12 @@
     </section>
 
     <!--==========================================
-                   CERTIFICATES
+                   services
 ===========================================-->
     <section id="services" class="section">
         <h4 class="text-uppercase text-center rtl_dir_center">الخدمات</h4>
         <div class="container">
-            <ul class="row pull-right">
+            <ul class="row">
 
                 <!-- 1st service -->
                 <li class="col col-md-4 col-sm-6 col-xs-12 pull-right">
@@ -610,7 +622,7 @@
                         <h6 class="text-capitalize">تطوير صفحات الويب</h6>
                         <!-- service info here -->
                         <p class="text-center">
-                            رائع في مجال برمجة صفحات الويب ولكني متوسط المستوى في التصميم
+                            رائع في مجال برمجة صفحات الويب
                         </p>
                     </div>
                 </li>
@@ -631,41 +643,35 @@
                 <!-- ./3rd service -->
 
                 <!-- 4th service -->
-                <li class="col col-md-4 col-sm-6 col-xs-12">
+                <li class="col col-md-4 col-sm-6 col-xs-12 pull-right">
                     <div class="card service-item text-center">
                         <!-- Edit icon and title here -->
-                        <i class="ion-cloud" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
-                        <h6 class="text-capitalize">Cloud Computing</h6>
+                        <i class="mdi mdi-microsoft-excel" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
+                        <h6 class="text-capitalize">مستندات إكسل</h6>
                         <!-- service info here -->
                         <p class="text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac
-                            tincidunt.
-                            In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum
-                            venenatis pharetra mi, ut vestibulum elit ultricies.
+                            خبير لخمس سنوات في مستندات إكسل
                         </p>
                     </div>
                 </li>
                 <!-- ./5th service -->
 
                 <!-- 5th service -->
-                <li class="col col-md-4 col-sm-6 col-xs-12">
+                <li class="col col-md-4 col-sm-6 col-xs-12 pull-right">
                     <div class="card service-item text-center">
                         <!-- Edit icon and title here -->
-                        <i class="ion-paintbrush" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
-                        <h6 class="text-capitalize">UI/UX Design</h6>
+                        <i class="mdi mdi-dot-net" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
+                        <h6 class="text-capitalize">تطوير الدوت نت</h6>
                         <!-- service info here -->
                         <p class="text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac
-                            tincidunt.
-                            In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum
-                            venenatis pharetra mi, ut vestibulum elit ultricies.
+                            مطور مبدع في مجال الدت نت
                         </p>
                     </div>
                 </li>
                 <!-- ./5th service -->
 
                 <!-- 6th service -->
-                <li class="col col-md-4 col-sm-6 col-xs-12">
+                <li class="col col-md-4 col-sm-6 col-xs-12 pull-right">
                     <div class="card service-item text-center">
                         <!-- Edit icon and title here -->
                         <i class="ion-settings" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
