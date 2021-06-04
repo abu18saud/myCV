@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\images\\forMe\\Personal",
-    "\\stylesheets"
+    "\\images",
+    "\\images\\forMe"
   ],
-  "SelectedNode": "\\stylesheets\\myStyle.css",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
