@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: 'Al-Aramco_';
     src: url('../fonts/Al-Aramco_.ttf') format('truetype');
 }
@@ -38,9 +38,25 @@
 }
 
 .background {
-    background-image: url(../images/forMe/programmingKnights.png);
-    background-size: 40px;
+    background-image: url(../images/forMe/‏‏programmingKnights_200px.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     border: 3px solid white;
     border-radius: 50%;
+}
+.background_muntjaty {
+    /*background-image: url(../images/forMe/Logos/Muntjaty_Logo.png);*/
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    /*border: 5px solid black;*/
+    border-radius: 50%;
+    padding-top: 4px;
+}
+
+
+.margin_left {
+    margin-left: 5px;
 }
