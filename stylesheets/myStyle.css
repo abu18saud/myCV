@@ -23,6 +23,16 @@
     text-align: center !important;
 }
 
+.ltr_dir {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+.ltr_dir_center {
+    direction: ltr !important;
+    text-align: center !important;
+}
+
 .float-right {
     float: right !important;
 }
