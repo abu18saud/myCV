@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\images",
+    "\\images\\forMe",
+    "\\images\\forMe\\Channels",
+    "\\images\\forMe\\Channels\\Telegram",
+    "\\images\\forMe\\Companies"
   ],
-  "SelectedNode": "\\images",
+  "SelectedNode": "\\images\\forMe\\Channels\\Telegram\\معلومات برمجية من عبدالله السالم.jpg",
   "PreviewInSolutionExplorer": false
 }
