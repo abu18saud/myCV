@@ -3759,28 +3759,28 @@
                             </div>
                             <div class="input-field">
                                 <input id="subject" name="subject" type="text" class="validate" required>
-                                <label for="subject">Subject</label>
+                                <label for="subject">الموضوع</label>
                             </div>
                             <div class="input-field">
                                 <input id="email" name="email" type="email" class="validate" required>
-                                <label for="email">Email</label>
+                                <label for="email">البريد الإلكتروني</label>
                             </div>
                             <div class="input-field">
                                 <textarea id="textarea" name="message" class="materialize-textarea" required></textarea>
-                                <label for="textarea">Massage</label>
+                                <label for="textarea">الرسالة المحفزة</label>
                             </div>
                             <div class="row">
                                 <div class="col col-md-12 col-sm-12 col-xs-12 text-center">
                                     <button type="submit" id="submit" name="submit-data" value="Submit"
                                         class="btn waves-effect waves-light btn-primary custom-btn">
                                         <!-- Button value here -->
-                                        <i class="ion-ios-paperplane"></i>Send
+                                        <i class="ion-ios-paperplane"></i>إرسال
                                     </button>
                                 </div>
 
                                 <!-- Message Sent and Error info -->
-                                <div id="snackbar">Your Message is sent</div>
-                                <div id="fail-snackbar">Something is going wrong, Please try again</div>
+                                <div id="snackbar" class="rtl_dir_center">لقد تم إرسال رسالتك ، شكراً</div>
+                                <div id="fail-snackbar">هناك خطأ ما ، يرجى إعادة المحاولة!</div>
                             </div>
                         </form>
 
@@ -3791,7 +3791,7 @@
             </div>
 
             <!-- Location MAP -->
-            <div class="row">
+            <div class="row" style="display: none;">
                 <div class="col col-md-12 col-sm-12 col-xs-12">
                     <div id="google-map" data-aos="zoom-in" data-aos-delay="0" data-aos-offset="0">
                         <div id="map-container"></div>

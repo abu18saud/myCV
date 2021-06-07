@@ -145,11 +145,10 @@
         /* =============== Client Swiper Initialize =============== */
         var clientSwiper = new Swiper ('#client-slider', {
             slidesPerView: 1,
-
             loop: true,
             direction: 'horizontal',
             effect: "slide",
-            speed: 1500,
+            speed: 3000,
             autoplay: 5000,
             spaceBetween: 0,
             pagination: '.swiper-pagination',
