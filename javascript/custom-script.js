@@ -206,15 +206,38 @@
 
 
         /* =============== Email Handling =============== */
-        $('form#contact-form').on('submit', function (e) {
+/*         $('form#contact-form').on('submit', function (e) {
             e.preventDefault(); //Prevents default submit
             var form = $(this);
             $("#submit").attr('disabled', 'disabled'); //Disable the submit button on click
             var post_data = form.serialize(); //Serialized the form data
-
+            var name = "عبدالله السالم";
+            var mobileNo = "0508532127";
+            var email = "abdullahalsalem18@gmail.com";
+            var chatId = "-554604399";
+            var salute = (DateTime.Now.Hour > 12) ? "مساء الخير 🌹 \n" : "صباح الخبر 🌹☀ \n";
+            var link = "";
+            try {
+                var apilToken = "1691033961:AAGV48qYKz6eN_Vk-U1VD2BswaB-TE-rPBs";
+                var contents = salute + "\n";
+                contents += "هناك شخص طلب إعلاناً على موقع متاجر منتجاتي: 📇\n";
+                contents += "______________________\n\n معلومات مقدّم الطلب 👨👩‍🦰:\n";
+                contents += "الاسم ✍: " + name +"\n";
+                contents += "الجوال 📱: "+ mobileNo+"\n";
+                contents += "البريد الإلكتروني 📧: "+ email +"\n";
+                //contents += "التواصل عبر واتسآب 🔗:\n "+ shareWithSocialMediaController.sendToCustomer(mobileNo)}\n\n\n";
+                contents += "نود إشعاركم بأنكم تلقيتم طلب إعلان بواسطة موقع متاجر منتجاتي 🛒 \n تطوير فريق فرسان البرمجة 🐴";
+        
+                link = "https://api.telegram.org/bot{apilToken}/sendMessage?chat_id=" + chatId + "&text=" + contents.Replace("\n", " % 0A");
+                window.location.href = link;
+            }
+            catch
+            {
+                window.location.href = "#";
+            }
             $.ajax({
                     type: 'POST',
-                    url: 'email-php/mail_handler.php', // Form script
+                    url: link, // Form script
                     data: post_data
                 })
                 .done(function () {
@@ -244,7 +267,7 @@
                     Materialize.updateTextFields(); // Rest floating labels
                     $("#submit").removeAttr('disabled', 'disabled'); // Enable submit button
                 });
-        });
+        }); */
         
     });
 

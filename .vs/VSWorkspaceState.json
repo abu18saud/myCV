@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\images",
     "\\images\\forMe",
     "\\images\\forMe\\Channels",
-    "\\images\\forMe\\Channels\\Telegram",
-    "\\images\\forMe\\Companies"
+    "\\images\\forMe\\Companies",
+    "\\javascript"
   ],
-  "SelectedNode": "\\images\\forMe\\Channels\\Telegram\\معلومات برمجية من عبدالله السالم.jpg",
+  "SelectedNode": "\\javascript\\myScript.js",
   "PreviewInSolutionExplorer": false
 }
