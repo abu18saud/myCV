@@ -3,30 +3,30 @@
 
 
     /* =============== Page pre-loader =============== */
-    $(window).load(function(){
+    $(window).load(function () {
         $('#page-loader').fadeOut(400);
 
         $('#intro').addClass('animated fadeInDown');
         $('#intro-div').addClass('animated fadeInUp');
         $('#profile').addClass('animated zoomIn');
-		
-		
-		/* =============== Portfolio Filterizr Initialize =============== */
-		$(function() {
-			//Initialize filterizr with default options
-			$('.filtr-container').filterizr();
 
-			$('.simple-filter li').on('click', function() {
-				$('.simple-filter li').removeClass('active-cat');
-				$(this).addClass('active-cat');
-			});
-		});
-		
+
+        /* =============== Portfolio Filterizr Initialize =============== */
+        $(function () {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+
+            $('.simple-filter li').on('click', function () {
+                $('.simple-filter li').removeClass('active-cat');
+                $(this).addClass('active-cat');
+            });
+        });
+
     });
 
 
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         /* =============== AOS Initialize =============== */
         AOS.init({
@@ -46,30 +46,30 @@
         var $sideNavMask = $('#side-nav-mask');
         var $link = $('.nav-link');
 
-        $menuBtn.on('click', function() {
-            $sideNav.animate({left: 0}, 'fast');
+        $menuBtn.on('click', function () {
+            $sideNav.animate({ left: 0 }, 'fast');
             $sideNavMask.addClass('visible');
         });
 
-        $link.on('click', function() {
-            $sideNav.animate({left: -240}, 'fast');
+        $link.on('click', function () {
+            $sideNav.animate({ left: -240 }, 'fast');
             $sideNavMask.removeClass('visible');
         });
 
-        $sideNavMask.on('click', function() {
-            $sideNav.animate({left: -240}, 'fast');
+        $sideNavMask.on('click', function () {
+            $sideNav.animate({ left: -240 }, 'fast');
             $sideNavMask.removeClass('visible');
         });
 
 
 
         /* =============== Page Scrolling Smoothly to Link Target =============== */
-        $('a[href*=#]:not([href=#])').on('click', function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        $('a[href*=#]:not([href=#])').on('click', function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
                 || location.hostname == this.hostname) {
 
                 var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - 32
@@ -83,7 +83,7 @@
 
 
         /* =============== Skill Bar value =============== */
-        $('.skill-progress').each(function() {
+        $('.skill-progress').each(function () {
             $(this).find('.skill-determinate').css({
                 width: jQuery(this).attr('data-percent')
             }, 7000);
@@ -94,56 +94,56 @@
 
         /* =============== Achievement toggle button =============== */
 
-        $( "#btn-1" ).on('click', function() {
+        $("#btn-1").on('click', function () {
             $("#content-1").slideToggle();
         });
 
-        $( "#btn-2" ).on('click', function() {
+        $("#btn-2").on('click', function () {
             $("#content-2").slideToggle();
         });
 
-        $( "#btn-3" ).on('click', function() {
+        $("#btn-3").on('click', function () {
             $("#content-3").slideToggle();
         });
 
-        $( "#btn-4" ).on('click', function() {
+        $("#btn-4").on('click', function () {
             $("#content-4").slideToggle();
         });
 
-        $( "#btn-5" ).on('click', function() {
+        $("#btn-5").on('click', function () {
             $("#content-5").slideToggle();
         });
 
-        $( "#btn-6" ).on('click', function() {
+        $("#btn-6").on('click', function () {
             $("#content-6").slideToggle();
         });
-        $( "#btn-7" ).on('click', function() {
+        $("#btn-7").on('click', function () {
             $("#content-7").slideToggle();
         });
 
-        $( "#btn-8" ).on('click', function() {
+        $("#btn-8").on('click', function () {
             $("#content-8").slideToggle();
         });
 
-        $( "#btn-9" ).on('click', function() {
+        $("#btn-9").on('click', function () {
             $("#content-9").slideToggle();
         });
-        $( "#btn-10" ).on('click', function() {
+        $("#btn-10").on('click', function () {
             $("#content-10").slideToggle();
         });
 
-        $( "#btn-11" ).on('click', function() {
+        $("#btn-11").on('click', function () {
             $("#content-11").slideToggle();
         });
 
-        $( "#btn-12" ).on('click', function() {
+        $("#btn-12").on('click', function () {
             $("#content-12").slideToggle();
         });
 
 
 
         /* =============== Client Swiper Initialize =============== */
-        var clientSwiper = new Swiper ('#client-slider', {
+        var clientSwiper = new Swiper('#client-slider', {
             slidesPerView: 1,
             loop: true,
             direction: 'horizontal',
@@ -167,7 +167,7 @@
         $month.show();
         $year.hide();
 
-        $monthBtn.on('click', function() {
+        $monthBtn.on('click', function () {
             $month.show();
             $year.hide();
             $month.addClass('animated fadeIn');
@@ -176,7 +176,7 @@
 
         });
 
-        $yearBtn.on('click', function() {
+        $yearBtn.on('click', function () {
             $month.hide();
             $year.show();
             $year.addClass('animated fadeIn');
@@ -190,56 +190,60 @@
         var offset = 300,
             scroll_top_duration = 700,
             $back_to_top = $('.back-to-top');
-        $(window).scroll(function(){
-            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('back-to-top-is-visible') : $back_to_top.removeClass('back-to-top-is-visible');
+        $(window).scroll(function () {
+            ($(this).scrollTop() > offset) ? $back_to_top.addClass('back-to-top-is-visible') : $back_to_top.removeClass('back-to-top-is-visible');
         });
 
         //smooth scroll to top --->>> Optional
-        $back_to_top.on('click', function(event){
+        $back_to_top.on('click', function (event) {
             event.preventDefault();
             $('body,html').animate({
-                    scrollTop: 0 ,
-                }, scroll_top_duration
+                scrollTop: 0,
+            }, scroll_top_duration
             );
         });
 
 
 
         /* =============== Email Handling =============== */
-/*         $('form#contact-form').on('submit', function (e) {
+        $('form#contact-form').on('submit', function (e) {
             e.preventDefault(); //Prevents default submit
             var form = $(this);
             $("#submit").attr('disabled', 'disabled'); //Disable the submit button on click
+
+            var d = new Date();
+            var curr_date = d.getDate();
+            var curr_month = d.getMonth() + 1; //Months are zero based
+            var curr_year = d.getFullYear();
+
             var post_data = form.serialize(); //Serialized the form data
-            var name = "عبدالله السالم";
-            var mobileNo = "0508532127";
-            var email = "abdullahalsalem18@gmail.com";
-            var chatId = "-554604399";
-            var salute = (DateTime.Now.Hour > 12) ? "مساء الخير 🌹 \n" : "صباح الخبر 🌹☀ \n";
-            var link = "";
-            try {
-                var apilToken = "1691033961:AAGV48qYKz6eN_Vk-U1VD2BswaB-TE-rPBs";
-                var contents = salute + "\n";
-                contents += "هناك شخص طلب إعلاناً على موقع متاجر منتجاتي: 📇\n";
-                contents += "______________________\n\n معلومات مقدّم الطلب 👨👩‍🦰:\n";
-                contents += "الاسم ✍: " + name +"\n";
-                contents += "الجوال 📱: "+ mobileNo+"\n";
-                contents += "البريد الإلكتروني 📧: "+ email +"\n";
-                //contents += "التواصل عبر واتسآب 🔗:\n "+ shareWithSocialMediaController.sendToCustomer(mobileNo)}\n\n\n";
-                contents += "نود إشعاركم بأنكم تلقيتم طلب إعلان بواسطة موقع متاجر منتجاتي 🛒 \n تطوير فريق فرسان البرمجة 🐴";
-        
-                link = "https://api.telegram.org/bot{apilToken}/sendMessage?chat_id=" + chatId + "&text=" + contents.Replace("\n", " % 0A");
-                window.location.href = link;
-            }
-            catch
-            {
-                window.location.href = "#";
-            }
+            var name = $("#name").val();
+            var mobileNo = $("#mobile").val();
+            var subject = $("#subject").val();
+            var message = $("#textarea").val();
+            var chatId = "7956856";
+            var newLine = "%0A";
+            var salute = "تحية طيبة 🌹 " + newLine;
+            var apilToken = "1703156053:AAGC_Xb2sYmywq6Rq1ew3qM2Sp9buvM3VVI";
+            var contents = salute + newLine;
+            contents += "هناك شخص شاهد سيرتك الذاتية وأرسل لك رسالةً تفاصيلها أدانه 😊❤:" + newLine;
+            contents += "______________________" + newLine + newLine + " تفاصيل المرسل والرسالة ‍💌:";
+            contents += "الاسم ✍: " + name + newLine;
+            contents += "الجوال 📱: " + mobileNo + newLine;
+            contents += "الموضوع 🚀: " + subject + newLine;
+            contents += "نص الرسالة 📧: " + newLine + message + newLine;
+            contents += "وقت الإرسال 📆: " + d + newLine;
+
+
+            //contents += "التواصل عبر واتسآب 🔗:\n "+ shareWithSocialMediaController.sendToCustomer(mobileNo)}\n\n\n";
+            contents += "لقد تم إرسال هذه الرسالة بواسطة موقع سيرتك الذاتية 📄 " + newLine + " تطوير فريق فرسان البرمجة 🐴";
+
+            var link = "https://api.telegram.org/bot" + apilToken + "/sendMessage?chat_id=" + chatId + "&text=" + contents.replace("<br>", "%0A");
             $.ajax({
-                    type: 'POST',
-                    url: link, // Form script
-                    data: post_data
-                })
+                type: 'POST',
+                url: link, // Form script
+                data: post_data
+            })
                 .done(function () {
 
                     // Get the snackbar DIV
@@ -247,7 +251,7 @@
                     // Add the "show" class to DIV
                     x.className = "show";
                     // After 3 seconds, remove the show class from DIV
-                    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+                    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
 
                     $("form#contact-form")[0].reset();
                     Materialize.updateTextFields(); // Rest floating labels
@@ -261,19 +265,19 @@
                     // Add the "show" class to DIV
                     y.className = "show";
                     // After 3 seconds, remove the show class from DIV
-                    setTimeout(function(){ y.className = y.className.replace("show", ""); }, 3000);
+                    setTimeout(function () { y.className = y.className.replace("show", ""); }, 3000);
 
                     $("form#contact-form")[0].reset();
                     Materialize.updateTextFields(); // Rest floating labels
                     $("#submit").removeAttr('disabled', 'disabled'); // Enable submit button
                 });
-        }); */
-        
+        });
+
     });
 
 
-    
-    
+
+
 
 
 })(jQuery);

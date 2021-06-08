@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="author" content="فرسان البرمجة">
-    <meta name="keywords" content="السيرة الذاتية">
-    <meta name="description" content="عبدالله علي السالم">
+    <meta name="keywords" content="السيرة الذاتية عبدالله السالم">
+    <meta name="description" content="السيرة الذاتية عبدالله السالم">
     <meta itemprop="description" content="السيرة الذاتية عبدالله السالم">
     <meta property="og:description" content="السيرة الذاتية عبدالله السالم">
     <meta name="twitter:description" content="السيرة الذاتية عبدالله السالم">
@@ -62,23 +62,23 @@
     <link rel="stylesheet" href="stylesheets/myStyle.css">
 
     <!-- Custom Style -->
-    <link href="stylesheets/style-red.css" rel="stylesheet">
-    <link href="stylesheets/style-pink.css" rel="stylesheet">
-    <link href="stylesheets/style-purple.css" rel="stylesheet">
-    <link href="stylesheets/style-deep-purple.css" rel="stylesheet">
-    <link href="stylesheets/style-indigo.css" rel="stylesheet">
-    <link href="stylesheets/style-blue.css" rel="stylesheet">
-    <link href="stylesheets/style-teal.css" rel="stylesheet">
-    <link href="stylesheets/style-green.css" rel="stylesheet">
-    <link href="stylesheets/style-light-green.css" rel="stylesheet">
-    <link href="stylesheets/style-amber.css" rel="stylesheet">
-    <link href="stylesheets/style-orange.css" rel="stylesheet">
-    <link href="stylesheets/style-deep-orange.css" rel="stylesheet">
-    <link href="stylesheets/style-brown.css" rel="stylesheet">
-    <link href="stylesheets/style-blue-grey.css" rel="stylesheet">
-    <link href="stylesheets/style-grey.css" rel="stylesheet">
+    <!--<link href="stylesheets/style-red.css" rel="stylesheet">-->
+    <!--<link href="stylesheets/style-pink.css" rel="stylesheet">-->
+    <!--<link href="stylesheets/style-purple.css" rel="stylesheet">-->
+    <!--<link href="stylesheets/style-deep-purple.css" rel="stylesheet">--> <!--للبنات-->
+    <!--<link href="stylesheets/style-indigo.css" rel="stylesheet"> **-->
+    <!--<link href="stylesheets/style-blue.css" rel="stylesheet">-->
+    <!--<link href="stylesheets/style-teal.css" rel="stylesheet"> **-->
+    <!--<link href="stylesheets/style-green.css" rel="stylesheet"> **--> <!--اليوم الوطني-->
+    <!--<link href="stylesheets/style-light-green.css" rel="stylesheet">-->
+    <!--<link href="stylesheets/style-amber.css" rel="stylesheet">-->
+    <!--<link href="stylesheets/style-orange.css" rel="stylesheet">-->
+    <!--<link href="stylesheets/style-deep-orange.css" rel="stylesheet">-->
+    <link href="stylesheets/style-brown_ar.css" rel="stylesheet"> <!--**-->
+    <!--<link href="stylesheets/style-blue-grey.css" rel="stylesheet">-->
+    <!--<link href="stylesheets/style-grey.css" rel="stylesheet">-->
     <!-- Default Style same as style-blue-grey -->
-    <link id="color-switcher" href="stylesheets/style_ar.css" rel="stylesheet">
+    <!--<link id="color-switcher" href="stylesheets/style_ar.css" rel="stylesheet">-->
 
 
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -178,7 +178,7 @@
         <!-- Name and Status -->
         <div id="intro" class="container">
             <h1 class="text-center text-capitalize rtl_dir_center">عبدالله علي علي السالم</h1>
-            <h4 class="text-center text-capitalize rtl_dir_center">مطور كود خلفي بلغة C#</h4>
+            <h4 class="text-center text-capitalize rtl_dir_center padding_top">مطور كود خلفي بلغة C#</h4>
         </div>
     </div>
 
@@ -242,7 +242,15 @@
                             ذلك بصفتي مستقلاً. تمامًا مثل أي مطور، انا أستخدم بعض البرامج للتطوير، لكنني أفضل استخدام
                             البرامج المجانية ومفتوحة المصدر (FOSS) على البرامج غير المجانية والمغلقة المصدر (البرامج
                             الاحتكارية). أوصي بشدة الآخرين بالقيام بذلك حتى في خطوات تدريجية صغيرة.
+
+                            <center>
+                                <span class="rtl_dir">عدد الزيارات</span>
+                                <br />
+                                <span id="count">0</span>
+                            </center>
+
                         </p>
+
                         <div class="row">
                             <!-- Download & Contact Button -->
                             <div class="col col-xs-12 col-sm-12 col-md-12 text-center">
@@ -3746,7 +3754,6 @@
                     </div>
                 </div>
                 <!-- ./Contact Info -->
-
                 <!-- Contact Form -->
                 <div class="col col-md-7 col-sm-6 col-xs-12 pull-right">
                     <div class="contact card rtl_dir">
@@ -3761,21 +3768,22 @@
                                 <label for="subject">الموضوع</label>
                             </div>
                             <div class="input-field">
-                                <input id="email" name="email" type="email" class="validate" required>
-                                <label for="email">البريد الإلكتروني</label>
+                                <input id="mobile" name="mobile" type="number" class="validate" required>
+                                <label for="email">رقم الجوال</label>
                             </div>
                             <div class="input-field">
                                 <textarea id="textarea" name="message" class="materialize-textarea" required></textarea>
-                                <label for="textarea">الرسالة المحفزة</label>
+                                <label for="textarea">نص الرسالة</label>
                             </div>
                             <div class="row">
                                 <div class="col col-md-12 col-sm-12 col-xs-12 text-center">
                                     <!--type="submit" id="submit" name="submit-data"-->
-                                    <a href="javascript:void(0);" onclick="sendTelegram(document.getElementsByName('name')[0].value, document.getElementsByName('subject')[0].value, document.getElementsByName('message')[0].value); return false;" value="Submit"
+                                    <!--href="javascript:void(0);" onclick="sendTelegram(document.getElementsByName('name')[0].value, document.getElementsByName('subject')[0].value, document.getElementsByName('message')[0].value); return false;"-->
+                                    <button value="Submit" type="submit" id="submit" name="submit-data"
                                             class="btn waves-effect waves-light btn-primary custom-btn">
                                         <!-- Button value here -->
                                         <i class="ion-ios-paperplane margin_left"></i>إرسال
-                                    </a>
+                                    </button>
                                 </div>
 
                                 <!-- Message Sent and Error info -->
@@ -3835,7 +3843,26 @@
     <script src="javascript/jquery.filterizr.min.js"></script>
     <script src="javascript/swiper.jquery.min.js"></script>
     <script src="javascript/custom-script.js"></script>
+    <script>
+        async function recordVisit() {
+            const URL = "https://us-central1-counters-b.cloudfunctions.net/counter?id=abdullah_alsalem_cv";
+            const LOCAL_DOMAINS = ["localhost", "127.0.0.1"];
 
+            if (!LOCAL_DOMAINS.includes(window.location.hostname)) {
+                let response = await fetch(URL);
+
+                if (response.ok) {
+                    let json = await response.json();
+                    console.log(json);
+                    $("#count")[0].innerHTML = json.count;
+                } else {
+                    console.log("HTTP-Error: " + response.status);
+                }
+            }
+        };
+
+        recordVisit();
+    </script>
 
 </body>
 
