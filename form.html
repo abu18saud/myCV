@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Save Web Form Data to Spreadsheets</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script>function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/13805/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}</script>
+</head>
+<body>
+    <form id="myForm">
+        <label>طابع زمني</label>
+        <input name="طابع زمني" />
+        <br />
+        <label>اسم العميل</label>
+        <input name="اسم العميل" />
+        <br />
+        <label>الجنس</label>
+        <input name="الجنس" />
+        <br />
+        <label>كيف سمعتَ عنا؟</label>
+        <input name="كيف سمعتَ عنا؟" />
+        <br />
+        <label>معلومات إضافية عنك</label>
+        <input name="معلومات إضافية عنك" />
+        <br />
+        <label>البريد الإلكتروني</label>
+        <input name="البريد الإلكتروني" />
+        <br />
+        <label>رقم جوال التواصل</label>
+        <input name="رقم جوال التواصل" />
+        <br />
+        <label>رقم جوال واتسآب</label>
+        <input name="رقم جوال واتسآب" />
+        <br />
+        <label>هل تود الانضمام إلى قائمة رسائل جماعية عبر واتسآب لتلقي أخبارنا؟</label>
+        <input name="هل تود الانضمام إلى قائمة رسائل جماعية عبر واتسآب لتلقي أخبارنا؟" />
+        <br />
+        <label>اسم المشروع</label>
+        <input name="اسم المشروع" />
+        <br />
+        <label>نوع المشروع</label>
+        <input name="نوع المشروع" />
+        <br />
+        <label>تفصيل المشروع (يرجى التفصيل)</label>
+        <input name="تفصيل المشروع (يرجى التفصيل)" />
+        <br />
+        <label>يرجى إرفاق كل ما يتعلق بالمشروع المطلوب</label>
+        <input name="يرجى إرفاق كل ما يتعلق بالمشروع المطلوب" />
+        <br />
+        <label>تحديات المشروع المطلوب</label>
+        <input name="تحديات المشروع المطلوب" />
+        <br />
+    </form>
+    <button onclick='SubForm()'>Submit</button>
+</body>
+</html>
