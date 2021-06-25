@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Al-Aramco_';
+  src: url('../../fonts/Al-Aramco_.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DroidKufi-Regular';
+  src: url('../../fonts/DroidKufi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GE_SS_Two_Bold';
+  src: url('../../fonts/GE_SS_Two_Bold.eot') format('embedded-opentype');
+}
 /*-------------------------------------
 [Master Stylesheet]
 Project:	    Decent Material CV | Resume
@@ -128,7 +142,7 @@ html, body {
   padding: 0;
   outline: 0;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Al-Aramco_', 'DroidKufi-Regular','GE_SS_Two_Bold';
   font-size: 15px;
   background-color: #fafafa;
   color: #606060;
@@ -141,7 +155,8 @@ html, body {
 
 /*-------------TYPOGRAPHY----------------*/
 h1, h2, h3, h4, h5, h6, p, a, li {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Al-Aramco_', 'DroidKufi-Regular','GE_SS_Two_Bold';
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500; }
