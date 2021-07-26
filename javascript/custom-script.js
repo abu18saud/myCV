@@ -93,51 +93,61 @@
 
 
         /* =============== Achievement toggle button =============== */
+        $("#btn--2").on('click', function () {
+            $("#content--2").slideToggle(1000);
+        });        
 
+        $("#btn--1").on('click', function () {
+            $("#content--1").slideToggle(1000);
+        });
+        $("#btn-0").on('click', function () {
+            $("#content-0").slideToggle(1000);
+        });
+        
         $("#btn-1").on('click', function () {
-            $("#content-1").slideToggle();
+            $("#content-1").slideToggle(1000);
         });
 
         $("#btn-2").on('click', function () {
-            $("#content-2").slideToggle();
+            $("#content-2").slideToggle(1000);
         });
 
         $("#btn-3").on('click', function () {
-            $("#content-3").slideToggle();
+            $("#content-3").slideToggle(1000);
         });
 
         $("#btn-4").on('click', function () {
-            $("#content-4").slideToggle();
+            $("#content-4").slideToggle(1000);
         });
 
         $("#btn-5").on('click', function () {
-            $("#content-5").slideToggle();
+            $("#content-5").slideToggle(1000);
         });
 
         $("#btn-6").on('click', function () {
-            $("#content-6").slideToggle();
+            $("#content-6").slideToggle(1000);
         });
         $("#btn-7").on('click', function () {
-            $("#content-7").slideToggle();
+            $("#content-7").slideToggle(1000);
         });
 
         $("#btn-8").on('click', function () {
-            $("#content-8").slideToggle();
+            $("#content-8").slideToggle(1000);
         });
 
         $("#btn-9").on('click', function () {
-            $("#content-9").slideToggle();
+            $("#content-9").slideToggle(1000);
         });
         $("#btn-10").on('click', function () {
-            $("#content-10").slideToggle();
+            $("#content-10").slideToggle(1000);
         });
 
         $("#btn-11").on('click', function () {
-            $("#content-11").slideToggle();
+            $("#content-11").slideToggle(1000);
         });
 
         $("#btn-12").on('click', function () {
-            $("#content-12").slideToggle();
+            $("#content-12").slideToggle(1000);
         });
 
 
