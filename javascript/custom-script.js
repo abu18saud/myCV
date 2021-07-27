@@ -93,9 +93,104 @@
 
 
         /* =============== Achievement toggle button =============== */
+        var achJquery = {
+            title: "شهادة JQuery",
+            icon: "mdi mdi-jquery",
+            period: "25 يوليو 2021",
+            approval: "SoloLearn",
+            urlApproval: "https://www.sololearn.com/home",
+            dated: "25 يوليو 2021",
+            expiredDate: "لا تنتهي",
+            id: "1082-21378354",
+            url: "https://www.sololearn.com/Certificate/1082-21378354/jpg"
+        };
+        var achJS = {
+            title: "شهادة JavaScript",
+            icon: "mdi mdi-nodejs",
+            period: "18 يوليو 2021",
+            approval: "SoloLearn",
+            urlApproval: "https://www.sololearn.com/home",
+            dated: "18 يوليو 2021",
+            expiredDate: "لا تنتهي",
+            id: "21378354-1024",
+            url: "https://www.sololearn.com/certificates/course/en/21378354/1024/landscape/png"
+        };
+
+        var achievements = new Array(achJquery, achJS);
+
+        var i = 50;
+
+        for (var ach of achievements) {
+
+            var btn = "#btn-"+ i;
+            var _content = ".content-" + i;
+
+            $(btn).on('click', function () {
+                $(_content).slideToggle(1000);
+            });
+
+            var contents = "<!-- -" + i + " Achievement -->" +
+                "<div class='col col-md-4 col-sm-6 col-xs-12 float-right'>" +
+                "<div class='achievement'>" +
+                "<div class='achievement-top-bar'>" +
+                "<!-- Achievement Title Here -->" +
+                "<h5 class='text-center text-capitalize rtl_dir_center'>" +
+                ach.title +
+                "</h5>" +
+                "</div>" +
+                "<div class='achievement-inner'>" +
+                "<div class='achievement-header'>" +
+                "<div class='achievement-heading'>" +
+                "<!-- Icon and Date -->" +
+                "<i class='text-center " + ach.icon + "'></i>" +
+                "<h6 class='text-center rtl_dir_center'>" + ach.period + "</h6>" +
+                "</div>" +
+
+                "<!-- Button ID For Content ID -->" +
+                "<a id='btn-" + i + "'" +
+                "class='btn-floating waves-effect waves-light btn-large achievement-more-btn custom-btn'" +
+                "data-aos='zoom-in' data-aos-delay='300'>" +
+                "<i class='ion-ios-arrow-down'></i>" +
+                "</a>" +
+
+                "</div>" +
+
+                "<!-- Content ID -->" +
+                "<div id='content-" + i + "' class='achievement-content content-" + i + "'>" +
+                "<!-- Description -->" +
+                "<p class='rtl_dir'>" +
+                "جهة الإعتماد: <a href='" + ach.urlApproval + "'>" + ach.approval + "</a><br />" +
+                "تاريخ الإصدار: " + ach.dated + "<br />" +
+                "تاريخ الإنتهاء: " + ach.expiredDate + "<br />" +
+                "معرف الشهادة: " + ach.id + "<br />" +
+                "<a class='rtl_dir_center'" +
+                "href='" + ach.url + "'" +
+                "target='_blank'>عرض الإعتماد</a>" +
+                "</p>" +
+                "</div>" +
+                "</div>" +
+                "</div>" +
+                "</div>" +
+                "<!-- ./-" + i + " Achievement -->";
+
+
+
+
+
+            //$("#achievementRows").prepend(contents);
+            i++;
+        }
+
+
+
+
+
+
+
+
         $("#btn--2").on('click', function () {
             $("#content--2").slideToggle(1000);
-        });        
+        });
 
         $("#btn--1").on('click', function () {
             $("#content--1").slideToggle(1000);
@@ -103,7 +198,7 @@
         $("#btn-0").on('click', function () {
             $("#content-0").slideToggle(1000);
         });
-        
+
         $("#btn-1").on('click', function () {
             $("#content-1").slideToggle(1000);
         });
