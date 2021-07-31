@@ -75,3 +75,7 @@
 .padding_top{
     padding-top: 20px !important;
 }
+.flex-container {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+}
