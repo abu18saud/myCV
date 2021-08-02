@@ -25,6 +25,128 @@
 })(jQuery); */
 
 
+//calling the function in window.onload to make sure the HTML is loaded
+
+
+
+    //< !--Custom Style-- >
+    //    <link href="stylesheets/arColors/style-purple.css" rel="stylesheet">
+    //        <link href="stylesheets/arColors/style-deep-purple.css" rel="stylesheet">-->
+    //<!--للبنات-->
+    //<!--<link href="stylesheets/arColors/style-indigo.css" rel="stylesheet">-->
+    //<!--**-->
+    //<!--<link href="stylesheets/arColors/style-blue.css" rel="stylesheet">
+    //                    <link href="stylesheets/arColors/style-teal.css" rel="stylesheet">-->
+    //<!--**-->
+    //<!--<link href="stylesheets/arColors/style-green.css" rel="stylesheet">-->
+    //<!--**-->
+    //<!--اليوم الوطني-->
+    //<!--<link href="stylesheets/arColors/style-light-green.css" rel="stylesheet">
+    //                                <link href="stylesheets/arColors/style-amber.css" rel="stylesheet">
+    //                                    <link href="stylesheets/arColors/style-orange.css" rel="stylesheet">
+    //                                        <link href="stylesheets/arColors/style-deep-orange.css" rel="stylesheet">-->
+    //<link href="stylesheets/arColors/style-brown.css" rel="stylesheet">
+/* =============== Achievement toggle button =============== */
+var red = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+};
+var pink = {
+    arTitle: "وردي",
+    enTitle: "Pink",
+    href: "stylesheets/arColors/style-pink.css",
+    enHref: "stylesheets/style-pink.css"
+};
+/* var purple = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+};
+var red = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+};
+var red = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+};
+var red = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+};
+var red = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+};
+var red = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+};
+var red = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+};
+var red = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+};
+var red = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+};
+var red = {
+    arTitle: "أحمر",
+    enTitle: "Red",
+    href: "stylesheets/arColors/style-red.css",
+    enHref: "stylesheets/style-red.css"
+}; */
+
+
+
+var styles = new Array(red, pink);
+
+
+
+
+
+
+window.onload = function () {
+    var pos = 0;
+    //our box element
+    var box = document.getElementById('box');
+    var t = setInterval(move, 10);
+
+    function move() {
+        if (pos >= 150) {
+            clearInterval(t);
+        }
+        else {
+            pos += 1;
+            $('link[href="stylesheets/arColors/style-brown.css"]').attr('href', styles[pos].href);
+        }
+    }
+};
+
+
 function sendTelegram(name, mobileNo, email) {
     //var name = "عبدالله السالم";
     //var mobileNo = "0508532127";
