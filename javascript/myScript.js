@@ -37,6 +37,12 @@
 //<!--اليوم الوطني-->
 //<link href="stylesheets/arColors/style-brown.css" rel="stylesheet">
 /* =============== Achievement toggle button =============== */
+var brown = {
+    arTitle: "بني",
+    enTitle: "brown",
+    href: "stylesheets/arColors/style-brown.css",
+    enHref: "stylesheets/style-brown.css"
+};
 var red = {
     arTitle: "أحمر",
     enTitle: "Red",
@@ -109,31 +115,32 @@ var deepOrange = {
     href: "stylesheets/arColors/style-deep-orange.css",
     enHref: "stylesheets/style-deep-orange.css"
 };
-var brown = {
-    arTitle: "بني",
-    enTitle: "brown",
-    href: "stylesheets/arColors/style-brown.css",
-    enHref: "stylesheets/style-brown.css"
-};
 
-
-
-
-var styles = new Array(red, pink, purple, deepPurple, indigo, blue, teal, green, lightGreen, amber, orange, deepOrange, brown);
+var styles = new Array(brown, red, pink, purple, deepPurple, indigo, blue, teal, green, lightGreen, amber, orange, deepOrange);
 
 window.onload = function () {
-    var pos = 0;
-    var t = setInterval(move, 100000);
+    let pos = 0;
+    var t = setInterval(move, 1000000);
 
     function move() {
-        if (pos >= styles.length) {
-            clearInterval(t);
+        if (pos == styles.length) {
+            //clearInterval(t);
+            $('link[href="stylesheets/arColors/style-'+ styles[styles.length-2] +'.css"]').attr('href', styles[0].href);
             pos = 0;
-            break;
+            return;
         }
         else {
-            $('link[href="stylesheets/arColors/style-brown.css"]').attr('href', styles[pos].href);
-            $("#_color").before("<p>(لون السيرة "+ styles[pos].arTitle +")</p>");
+            // if (styles[pos].enTitle == "brown") {
+            //     pos = 1;
+            // }
+            //alert(styles[pos].arTitle);
+            if (pos == 0) {
+                $('link[href="stylesheets/arColors/style-brown.css"]').attr('href', styles[pos].href);
+            } else {
+                //alert(styles[pos - 1].arTitle);
+                $('link[href="' + styles[pos - 1].href + '"]').attr('href', styles[pos].href);
+            }
+            $("#BottomLeftCorner").html("<p>(لون السيرة " + styles[pos].arTitle + ")</p>");
             pos++;
         }
     }
