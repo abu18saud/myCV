@@ -120,7 +120,7 @@ var styles = new Array(brown, red, pink, purple, deepPurple, indigo, blue, teal,
 
 window.onload = function () {
     let pos = 0;
-    var t = setInterval(move, 1000000);
+    var t = setInterval(move, 10000);
 
     function move() {
         if (pos == styles.length) {
