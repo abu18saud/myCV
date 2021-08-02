@@ -37,86 +37,99 @@
 //<!--اليوم الوطني-->
 //<link href="stylesheets/arColors/style-brown.css" rel="stylesheet">
 /* =============== Achievement toggle button =============== */
-var brown = {
-    arTitle: "بني",
-    enTitle: "brown",
-    href: "stylesheets/arColors/style-brown.css",
-    enHref: "stylesheets/style-brown.css"
-};
 var red = {
     arTitle: "أحمر",
     enTitle: "Red",
+    prvHref:"stylesheets/arColors/style-brown.css",
     href: "stylesheets/arColors/style-red.css",
     enHref: "stylesheets/style-red.css"
 };
 var pink = {
     arTitle: "وردي",
     enTitle: "Pink",
+    prvHref:"stylesheets/arColors/style-red.css",
     href: "stylesheets/arColors/style-pink.css",
     enHref: "stylesheets/style-pink.css"
 };
 var purple = {
     arTitle: "بنفسجي",
     enTitle: "Purple",
+    prvHref:"stylesheets/arColors/style-pink.css",
     href: "stylesheets/arColors/style-purple.css",
     enHref: "stylesheets/style-purple.css"
 };
 var deepPurple = {
     arTitle: "بنفسجي غامق",
     enTitle: "deep-purple",
+    prvHref:"stylesheets/arColors/style-purple.css",
     href: "stylesheets/arColors/style-deep-purple.css",
     enHref: "stylesheets/style-deep-purple.css"
 };
 var indigo = {
     arTitle: "نيلي",
     enTitle: "indigo",
+    prvHref:"stylesheets/arColors/style-deep-purple.css",
     href: "stylesheets/arColors/style-indigo.css",
     enHref: "stylesheets/style-indigo.css"
 };
 var blue = {
     arTitle: "أزرق",
     enTitle: "blue",
+    prvHref:"stylesheets/arColors/style-indigo.css",
     href: "stylesheets/arColors/style-blue.css",
     enHref: "stylesheets/style-blue.css"
 };
 var teal = {
     arTitle: "تركواز",
     enTitle: "Teal",
+    prvHref:"stylesheets/arColors/style-blue.css",
     href: "stylesheets/arColors/style-teal.css",
     enHref: "stylesheets/style-teal.css"
 };
 var green = {
     arTitle: "أخضر",
     enTitle: "green",
+    prvHref:"stylesheets/arColors/style-teal.css",
     href: "stylesheets/arColors/style-green.css",
     enHref: "stylesheets/style-green.css"
 };
 var lightGreen = {
     arTitle: "أخضر فاتح",
     enTitle: "light-green",
+    prvHref:"stylesheets/arColors/style-green.css",
     href: "stylesheets/arColors/style-light-green.css",
     enHref: "stylesheets/style-light-green.css"
 };
 var amber = {
     arTitle: "عنبر",
     enTitle: "amber",
+    prvHref:"stylesheets/arColors/style-light-green.css",
     href: "stylesheets/arColors/style-amber.css",
     enHref: "stylesheets/style-amber.css"
 };
 var orange = {
     arTitle: "برتقالي",
     enTitle: "orange",
+    prvHref:"stylesheets/arColors/style-amber.css",
     href: "stylesheets/arColors/style-orange.css",
     enHref: "stylesheets/style-orange.css"
 };
 var deepOrange = {
     arTitle: "برتقالي غامق",
     enTitle: "deep-orange",
+    prvHref:"stylesheets/arColors/style-orange.css",
     href: "stylesheets/arColors/style-deep-orange.css",
     enHref: "stylesheets/style-deep-orange.css"
 };
+var brown = {
+    arTitle: "بني",
+    enTitle: "brown",
+    prvHref:"stylesheets/arColors/style-deep-orange.css",
+    href: "stylesheets/arColors/style-brown.css",
+    enHref: "stylesheets/style-brown.css"
+};
 
-var styles = new Array(brown, red, pink, purple, deepPurple, indigo, blue, teal, green, lightGreen, amber, orange, deepOrange);
+var styles = new Array(red, pink, purple, deepPurple, indigo, blue, teal, green, lightGreen, amber, orange, deepOrange, brown);
 
 window.onload = function () {
     let pos = 0;
@@ -138,7 +151,7 @@ window.onload = function () {
                 $('link[href="stylesheets/arColors/style-brown.css"]').attr('href', styles[pos].href);
             } else {
                 //alert(styles[pos - 1].arTitle);
-                $('link[href="' + styles[pos - 1].href + '"]').attr('href', styles[pos].href);
+                $('link[href="' + styles[pos].prvHref + '"]').attr('href', styles[pos].href);
             }
             $("#BottomLeftCorner").html("<p>(لون السيرة " + styles[pos].arTitle + ")</p>");
             pos++;
