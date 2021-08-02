@@ -186,7 +186,9 @@
 
 
 
-
+        $("#btn--3").on('click', function () {
+            $("#content--3").slideToggle(1000);
+        });
 
         $("#btn--2").on('click', function () {
             $("#content--2").slideToggle(1000);
