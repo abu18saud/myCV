@@ -29,23 +29,13 @@
 
 
 
-    //< !--Custom Style-- >
-    //    <link href="stylesheets/arColors/style-purple.css" rel="stylesheet">
-    //        <link href="stylesheets/arColors/style-deep-purple.css" rel="stylesheet">-->
-    //<!--للبنات-->
-    //<!--<link href="stylesheets/arColors/style-indigo.css" rel="stylesheet">-->
-    //<!--**-->
-    //<!--<link href="stylesheets/arColors/style-blue.css" rel="stylesheet">
-    //                    <link href="stylesheets/arColors/style-teal.css" rel="stylesheet">-->
-    //<!--**-->
-    //<!--<link href="stylesheets/arColors/style-green.css" rel="stylesheet">-->
-    //<!--**-->
-    //<!--اليوم الوطني-->
-    //<!--<link href="stylesheets/arColors/style-light-green.css" rel="stylesheet">
-    //                                <link href="stylesheets/arColors/style-amber.css" rel="stylesheet">
-    //                                    <link href="stylesheets/arColors/style-orange.css" rel="stylesheet">
-    //                                        <link href="stylesheets/arColors/style-deep-orange.css" rel="stylesheet">-->
-    //<link href="stylesheets/arColors/style-brown.css" rel="stylesheet">
+//< !--Custom Style-- >
+//<!--للبنات-->
+//<!--**-->
+//<!--**-->
+//<!--**-->
+//<!--اليوم الوطني-->
+//<link href="stylesheets/arColors/style-brown.css" rel="stylesheet">
 /* =============== Achievement toggle button =============== */
 var red = {
     arTitle: "أحمر",
@@ -59,89 +49,92 @@ var pink = {
     href: "stylesheets/arColors/style-pink.css",
     enHref: "stylesheets/style-pink.css"
 };
-/* var purple = {
-    arTitle: "أحمر",
-    enTitle: "Red",
-    href: "stylesheets/arColors/style-red.css",
-    enHref: "stylesheets/style-red.css"
+var purple = {
+    arTitle: "بنفسجي",
+    enTitle: "Purple",
+    href: "stylesheets/arColors/style-purple.css",
+    enHref: "stylesheets/style-purple.css"
 };
-var red = {
-    arTitle: "أحمر",
-    enTitle: "Red",
-    href: "stylesheets/arColors/style-red.css",
-    enHref: "stylesheets/style-red.css"
+var deepPurple = {
+    arTitle: "بنفسجي غامق",
+    enTitle: "deep-purple",
+    href: "stylesheets/arColors/style-deep-purple.css",
+    enHref: "stylesheets/style-deep-purple.css"
 };
-var red = {
-    arTitle: "أحمر",
-    enTitle: "Red",
-    href: "stylesheets/arColors/style-red.css",
-    enHref: "stylesheets/style-red.css"
+var indigo = {
+    arTitle: "نيلي",
+    enTitle: "indigo",
+    href: "stylesheets/arColors/style-indigo.css",
+    enHref: "stylesheets/style-indigo.css"
 };
-var red = {
-    arTitle: "أحمر",
-    enTitle: "Red",
-    href: "stylesheets/arColors/style-red.css",
-    enHref: "stylesheets/style-red.css"
+var blue = {
+    arTitle: "أزرق",
+    enTitle: "blue",
+    href: "stylesheets/arColors/style-blue.css",
+    enHref: "stylesheets/style-blue.css"
 };
-var red = {
-    arTitle: "أحمر",
-    enTitle: "Red",
-    href: "stylesheets/arColors/style-red.css",
-    enHref: "stylesheets/style-red.css"
+var teal = {
+    arTitle: "تركواز",
+    enTitle: "Teal",
+    href: "stylesheets/arColors/style-teal.css",
+    enHref: "stylesheets/style-teal.css"
 };
-var red = {
-    arTitle: "أحمر",
-    enTitle: "Red",
-    href: "stylesheets/arColors/style-red.css",
-    enHref: "stylesheets/style-red.css"
+var green = {
+    arTitle: "أخضر",
+    enTitle: "green",
+    href: "stylesheets/arColors/style-green.css",
+    enHref: "stylesheets/style-green.css"
 };
-var red = {
-    arTitle: "أحمر",
-    enTitle: "Red",
-    href: "stylesheets/arColors/style-red.css",
-    enHref: "stylesheets/style-red.css"
+var lightGreen = {
+    arTitle: "أخضر فاتح",
+    enTitle: "light-green",
+    href: "stylesheets/arColors/style-light-green.css",
+    enHref: "stylesheets/style-light-green.css"
 };
-var red = {
-    arTitle: "أحمر",
-    enTitle: "Red",
-    href: "stylesheets/arColors/style-red.css",
-    enHref: "stylesheets/style-red.css"
+var amber = {
+    arTitle: "عنبر",
+    enTitle: "amber",
+    href: "stylesheets/arColors/style-amber.css",
+    enHref: "stylesheets/style-amber.css"
 };
-var red = {
-    arTitle: "أحمر",
-    enTitle: "Red",
-    href: "stylesheets/arColors/style-red.css",
-    enHref: "stylesheets/style-red.css"
+var orange = {
+    arTitle: "برتقالي",
+    enTitle: "orange",
+    href: "stylesheets/arColors/style-orange.css",
+    enHref: "stylesheets/style-orange.css"
 };
-var red = {
-    arTitle: "أحمر",
-    enTitle: "Red",
-    href: "stylesheets/arColors/style-red.css",
-    enHref: "stylesheets/style-red.css"
-}; */
+var deepOrange = {
+    arTitle: "برتقالي غامق",
+    enTitle: "deep-orange",
+    href: "stylesheets/arColors/style-deep-orange.css",
+    enHref: "stylesheets/style-deep-orange.css"
+};
+var brown = {
+    arTitle: "بني",
+    enTitle: "brown",
+    href: "stylesheets/arColors/style-brown.css",
+    enHref: "stylesheets/style-brown.css"
+};
 
 
 
-var styles = new Array(red, pink);
 
-
-
-
-
+var styles = new Array(red, pink, purple, deepPurple, indigo, blue, teal, green, lightGreen, amber, orange, deepOrange, brown);
 
 window.onload = function () {
     var pos = 0;
-    //our box element
-    var box = document.getElementById('box');
-    var t = setInterval(move, 10);
+    var t = setInterval(move, 100000);
 
     function move() {
-        if (pos >= 150) {
+        if (pos >= styles.length) {
             clearInterval(t);
+            pos = 0;
+            break;
         }
         else {
-            pos += 1;
             $('link[href="stylesheets/arColors/style-brown.css"]').attr('href', styles[pos].href);
+            $("#_color").before("<p>(لون السيرة "+ styles[pos].arTitle +")</p>");
+            pos++;
         }
     }
 };
