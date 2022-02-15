@@ -185,7 +185,12 @@
 
 
 
-
+        $("#btn--6").on('click', function () {
+            $("#content--6").slideToggle(1000);
+        });
+        $("#btn--5").on('click', function () {
+            $("#content--5").slideToggle(1000);
+        });
         $("#btn--4").on('click', function () {
             $("#content--4").slideToggle(1000);
         });
